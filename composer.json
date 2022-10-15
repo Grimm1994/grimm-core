@@ -1,0 +1,11 @@
+{
+    "name": "grimm1994/grimm-core",
+    "description": "simple php mvc framework",
+    "authors": [
+        {
+            "name": "grimm994",
+            "email": "grimm250894@gmail.com"
+        }
+    ],
+    "require": {}
+}
