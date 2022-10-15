@@ -1,8 +1,8 @@
 <?php
 
-namespace grimm\grimmmvc\form;
+namespace grimm994\grimmCore\form;
 
-use grimm\grimmmvc\Model;
+use grimm994\grimmCore\Model;
 
 class InputField extends BaseField
 {

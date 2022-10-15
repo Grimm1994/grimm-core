@@ -1,9 +1,9 @@
 <?php
 
-namespace grimm\grimmmvc\middlewares;
+namespace grimm994\grimmCore\middlewares;
 
-use grimm\grimmmvc\Application;
-use grimm\grimmmvc\exception\ForbiddenException;
+use grimm994\grimmCore\Application;
+use grimm994\grimmCore\exception\ForbiddenException;
 
 class AuthMiddleware extends BaseMiddleware
 {

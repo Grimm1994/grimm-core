@@ -1,6 +1,6 @@
 <?php
 
-namespace grimm\grimmmvc;
+namespace grimm994\grimmCore;
 
 class Request
 {

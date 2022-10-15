@@ -1,8 +1,8 @@
 <?php
 
-namespace grimm\grimmmvc;
+namespace grimm994\grimmCore;
 
-use grimm\grimmmvc\db\Database;
+use grimm994\grimmCore\db\Database;
 
 class Application
 {

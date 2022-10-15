@@ -1,5 +1,5 @@
 {
-    "name": "grimm1994/grimm-core",
+    "name": "grimm994/grimm-core",
     "description": "simple php mvc framework",
     "authors": [
         {
@@ -10,7 +10,7 @@
     "require": {},
     "autoload": {
         "psr-4": {
-            "grimm\\grimmmvc\\": "./"
+            "grimm994\\grimmCore\\": "./"
         }
     }
 }

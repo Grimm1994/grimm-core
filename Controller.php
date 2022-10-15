@@ -1,8 +1,8 @@
 <?php
 
-namespace grimm\grimmmvc;
+namespace grimm994\grimmCore;
 
-use grimm\grimmmvc\middlewares\BaseMiddleware;
+use grimm994\grimmCore\middlewares\BaseMiddleware;
 
 class Controller
 {
@@ -10,7 +10,7 @@ class Controller
     private string $action = '';
 
     /**
-     * @var \grimm\grimmmvc\middlewares\BaseMiddleware[]
+     * @var \grimm994\grimmCore\middlewares\BaseMiddleware[]
      */
     private array $middlewares = [];
 

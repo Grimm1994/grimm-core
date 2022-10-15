@@ -1,9 +1,9 @@
 <?php
 
-namespace grimm\grimmmvc\db;
+namespace grimm994\grimmCore\db;
 
-use grimm\grimmmvc\Application;
-use grimm\grimmmvc\Model;
+use grimm994\grimmCore\Application;
+use grimm994\grimmCore\Model;
 
 abstract class DbModel extends Model
 {

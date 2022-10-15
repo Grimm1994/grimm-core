@@ -1,8 +1,8 @@
 <?php
 
-namespace grimm\grimmmvc;
+namespace grimm994\grimmCore;
 
-use grimm\grimmmvc\exception\NotFoundException;
+use grimm994\grimmCore\exception\NotFoundException;
 
 class Router
 {
