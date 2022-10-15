@@ -1,8 +1,8 @@
 <?php
 
-namespace grimm994\grimmCore\db;
+namespace grimm1994\grimmCore\db;
 
-use grimm994\grimmCore\Application;
+use grimm1994\grimmCore\Application;
 use Exception;
 
 final class Database

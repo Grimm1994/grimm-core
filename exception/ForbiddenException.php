@@ -1,6 +1,6 @@
 <?php
 
-namespace grimm994\grimmCore\exception;
+namespace grimm1994\grimmCore\exception;
 
 class ForbiddenException extends \Exception
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace grimm994\grimmCore;
+namespace grimm1994\grimmCore;
 
 class Response
 {

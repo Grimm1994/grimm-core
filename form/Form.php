@@ -1,8 +1,8 @@
 <?php
 
-namespace grimm994\grimmCore\form;
+namespace grimm1994\grimmCore\form;
 
-use grimm994\grimmCore\Model;
+use grimm1994\grimmCore\Model;
 
 class Form
 {

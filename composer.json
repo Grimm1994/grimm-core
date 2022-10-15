@@ -1,16 +1,16 @@
 {
-    "name": "grimm994/grimm-core",
+    "name": "grimm1994/grimm-core",
     "description": "simple php mvc framework",
     "authors": [
         {
-            "name": "grimm994",
+            "name": "Grigory Mytarev",
             "email": "grimm250894@gmail.com"
         }
     ],
     "require": {},
     "autoload": {
         "psr-4": {
-            "grimm994\\grimmCore\\": "./"
+            "grimm1994\\grimmCore\\": "./"
         }
     }
 }
