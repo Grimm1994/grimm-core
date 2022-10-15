@@ -7,5 +7,10 @@
             "email": "grimm250894@gmail.com"
         }
     ],
-    "require": {}
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "grimm\\grimmmvc": "./"
+        }
+    }
 }

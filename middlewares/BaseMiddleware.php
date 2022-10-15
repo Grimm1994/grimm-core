@@ -1,6 +1,6 @@
 <?php
 
-namespace app\core\middlewares;
+namespace grimm\grimmmvc\middlewares;
 
 abstract class BaseMiddleware
 {

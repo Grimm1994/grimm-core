@@ -1,8 +1,8 @@
 <?php
 
-namespace app\core;
+namespace grimm\grimmmvc;
 
-use app\core\db\DbModel;
+use grimm\grimmmvc\db\DbModel;
 
 abstract class UserModel extends DbModel
 {

@@ -1,9 +1,8 @@
 <?php
 
-namespace app\core;
+namespace grimm\grimmmvc;
 
-use app\core\db\Database;
-use app\core\db\DbModel;
+use grimm\grimmmvc\db\Database;
 
 class Application
 {

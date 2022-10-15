@@ -1,8 +1,8 @@
 <?php
 
-namespace app\core\form;
+namespace grimm\grimmmvc\form;
 
-use app\core\Model;
+use grimm\grimmmvc\Model;
 
 class Form
 {

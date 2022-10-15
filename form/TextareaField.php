@@ -1,6 +1,6 @@
 <?php
 
-namespace app\core\form;
+namespace grimm\grimmmvc\form;
 
 class TextareaField extends BaseField
 {
