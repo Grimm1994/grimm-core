@@ -6,6 +6,11 @@ use grimm1994\grimmCore\db\Database;
 
 class Application
 {
+    const EVENT_BEFORE_REQUEST = 'beforeRequest';
+    const EVENT_AFTER_REQUEST = 'afterRequest';
+
+    protected array $eventListeners = [];
+
     public static string $ROOT_DIR;
 
     public string $layout = 'main';
@@ -45,6 +50,8 @@ class Application
 
     public function run(): void
     {
+        $this->triggerEvent(self::EVENT_BEFORE_REQUEST);
+
         try {
             echo $this->router->resolve();
         } catch (\Exception $e) {
@@ -90,5 +97,18 @@ class Application
     public static function isGuest(): bool
     {
         return !self::$app->user;
+    }
+
+    public function on(string $eventName, callable $callBack)
+    {
+        $this->eventListeners[$eventName][] = $callBack;
+    }
+
+    private function triggerEvent(string $eventName)
+    {
+        $callbacks = $this->eventListeners[$eventName] ?? [];
+        foreach ($callbacks as $callback) {
+            call_user_func($callback);
+        }
     }
 }
