@@ -4,7 +4,9 @@ namespace grimm1994\grimmCore;
 
 class Request
 {
-    public function getPath(): string
+    private array $routeParams = [];
+
+    public function getUrl(): string
     {
         $path = $_SERVER['REQUEST_URI'] ?? '/';
         $position = strpos($path, '?');
@@ -12,19 +14,19 @@ class Request
         return !$position ? $path : substr($path, 0, $position);
     }
 
-    public function method(): string
+    public function getMethod(): string
     {
         return strtolower($_SERVER['REQUEST_METHOD']);
     }
 
     public function isGet(): bool
     {
-        return $this->method() === 'get';
+        return $this->getMethod() === 'get';
     }
 
     public function isPost(): bool
     {
-        return $this->method() === 'post';
+        return $this->getMethod() === 'post';
     }
 
     public function getBody(): array
@@ -42,5 +44,16 @@ class Request
         }
 
         return $body;
+    }
+
+    public function setRouteParams(array $params): static
+    {
+        $this->routeParams = $params;
+        return $this;
+    }
+
+    public function getRouteParams(): ?array
+    {
+        return $this->routeParams;
     }
 }

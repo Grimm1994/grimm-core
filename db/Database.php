@@ -40,7 +40,9 @@ final class Database
         $toApplyMigrations = array_diff($files, $appliedMigrations);
 
         foreach ($toApplyMigrations as $migration) {
-            if ($migration === '.' || $migration === '..') continue;
+            if ($migration === '.' || $migration === '..') {
+                continue;
+            }
 
             require_once Application::$ROOT_DIR . '/migrations/' . $migration;
             $className = pathinfo($migration, PATHINFO_FILENAME);
